@@ -1,6 +1,6 @@
 ## PLUGIN bot-plugin-services
 
-### Managed intents
+### Intents
  
 | Intent | Description | Entities | Example Sentences | Detailed Sentences | Trained | Used by | FPA APIs
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -27,3 +27,18 @@
 | tef.service | The name for a Telefonica Service | fusion |
 | tef.phonenumber | A phone number | 666666666 |
 | builtin.money | A monetary amount | €50 |
+
+
+## PLUGIN bot-plugin-billing
+
+### Intents
+
+| Intent | Description | Entities | Example Sentences | Detailed Sentences | Trained | Used by | FPA APIs
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| <sub>tef.intent.billing.balance</sub> | <sub>The user wants to check the balance of a prepaid line </sub> | <sub>tef.phonenumber</sub>| <sub>"What is my balance?", "How much money do I have in the line 666-666-666?"</sub> | <sub>Draft</sub> | <sub>NO</sub> | <sub>[YOTBOT-20](https://jirapdi.tid.es/browse/YOTBOT-20)</sub> | <sub>[service](https://demo-pdb-web-01.tid.es/v1/ui/#!/default/app_get_user_services) [balance](https://demo-pdb-web-01.tid.es/v1/ui/#!/default/app_get_phone_balance)</sub>
+ 
+### Entities
+ 
+| Intent | Description | Example |
+| --- | --- | --- |
+| tef.phonenumber | A phone number | 666666666 |
